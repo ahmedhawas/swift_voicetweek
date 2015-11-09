@@ -12,6 +12,7 @@
 		433A5DC51BF02E38001AED38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433A5DC31BF02E38001AED38 /* Main.storyboard */; };
 		433A5DC71BF02E38001AED38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433A5DC61BF02E38001AED38 /* Assets.xcassets */; };
 		433A5DCA1BF02E38001AED38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433A5DC81BF02E38001AED38 /* LaunchScreen.storyboard */; };
+		433A5DD21BF052BE001AED38 /* example_audio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 433A5DD11BF052BD001AED38 /* example_audio.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		433A5DC61BF02E38001AED38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433A5DC91BF02E38001AED38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433A5DCB1BF02E38001AED38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433A5DD11BF052BD001AED38 /* example_audio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = example_audio.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		433A5DBE1BF02E38001AED38 /* VoiceTweak */ = {
 			isa = PBXGroup;
 			children = (
+				433A5DD11BF052BD001AED38 /* example_audio.m4a */,
 				433A5DBF1BF02E38001AED38 /* AppDelegate.swift */,
 				433A5DC11BF02E38001AED38 /* ViewController.swift */,
 				433A5DC31BF02E38001AED38 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					433A5DBB1BF02E38001AED38 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 862DKPJK3G;
 					};
 				};
 			};
@@ -124,6 +128,7 @@
 			files = (
 				433A5DCA1BF02E38001AED38 /* LaunchScreen.storyboard in Resources */,
 				433A5DC71BF02E38001AED38 /* Assets.xcassets in Resources */,
+				433A5DD21BF052BE001AED38 /* example_audio.m4a in Resources */,
 				433A5DC51BF02E38001AED38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VoiceTweak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedhawas.VoiceTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = VoiceTweak/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedhawas.VoiceTweak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
